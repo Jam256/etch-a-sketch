@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Etch A Sketch</title>
+  <meta charset="UTF-8">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      background-color: brown;
+      color: gold;
+      padding: 40px;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    input {
+      width: 60px;
+    }
+    #settings {
+      border: 1px solid gold;
+      padding: 10px;
+      margin-left: 10px;
+    }
+    #grid {
+      display: grid;
+      background-color: gainsboro;
+    }
+  </style>
+</head>
+<body>
+  <h1>Etch A Sketch</h1>
+  Create New Screen:
+  <span id="settings">
+    Screen Size:
+    <input id="screen-size">
+    Resolution:
+    <input id="resolution">
+    Mode:
+    <button id="regular-mode">Regular</button>
+    <button id="light-mode">Light</button>
+    <button id="color-mode">Color</button>
+  </span><br><br>
+  <div id="container"></div>
+  <script src="scripts.js"></script> 
+</body>
+</html>
